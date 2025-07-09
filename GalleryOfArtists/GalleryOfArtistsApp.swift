@@ -11,7 +11,7 @@ import SwiftUI
 struct GalleryOfArtistsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArtistsView()
         }
     }
 }

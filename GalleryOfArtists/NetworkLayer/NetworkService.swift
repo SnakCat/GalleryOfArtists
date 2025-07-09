@@ -8,14 +8,13 @@
 import Foundation
 
 protocol NetworkServiceProtocol {
-    func fetchData() async throws -> [ArtistModel]
+    func fetchData() async throws -> ArtistListModel
 }
 
 final class NetworkService: NetworkServiceProtocol {
-    
     private let baseURL = "https://cdn.accelonline.io/OUR6G_IgJkCvBg5qurB2Ag/files/YPHn3cnKEk2NutI6fHK04Q.json"
     
-    func fetchData() async throws -> [ArtistModel] {
+    func fetchData() async throws -> ArtistListModel {
         guard let url = URL(string: baseURL) else {
             throw URLError(.badURL)
         }
@@ -23,7 +22,7 @@ final class NetworkService: NetworkServiceProtocol {
         if let httpResponce = responce as? HTTPURLResponse, httpResponce.statusCode != 200 {
             fatalError("status code \(httpResponce.statusCode)")
         }
-        let artists = try JSONDecoder().decode([ArtistModel].self, from: data)
+        let artists = try JSONDecoder().decode(ArtistListModel.self, from: data)
         return artists
     }
 }

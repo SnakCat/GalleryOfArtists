@@ -7,16 +7,18 @@
 
 import Foundation
 
-struct ArtistModel: Identifiable, Codable {
-    var id: Int
+struct ArtistListModel: Codable {
+    let artists: [ArtistModel]
+}
+
+struct ArtistModel: Codable {
     let name: String
-    let bit: String
+    let bio: String
     let image: String
     let works: [WorksModel]
 }
 
-struct WorksModel: Identifiable, Codable {
-    let id: Int
+struct WorksModel: Codable {
     let title: String
     let image: String
     let info: String

@@ -14,7 +14,11 @@ struct ArtistsView: View {
         NavigationView {
             ScrollView {
                 ForEach(viewModel.artists, id: \.name) { artist in
-                    ArtistCustomCell(artist: artist)
+                    NavigationLink {
+                        ArtistDeteilView(artist: artist)
+                    } label: {
+                        ArtistCustomCell(artist: artist)
+                    }
                 }
             }
             .overlay {

@@ -49,20 +49,25 @@ struct ArtistDeteilView: View {
                     .padding(.horizontal, 20)
                 
                 ForEach(artist.works, id: \.title) { work in
-                    VStack(alignment: .leading) {
-                        Image(work.image)
-                            .resizable()
-                            .frame(width: 330, height: 144)
-                            .clipShape(.rect(cornerRadius: 10))
-                        Text(work.title)
-                            .font(.system(size: 16))
-                            .padding(.top, 10)
+                    NavigationLink {
+                        WorksDetailView(model: work)
+                    } label: {
+                        VStack(alignment: .leading) {
+                            Image(work.image)
+                                .resizable()
+                                .frame(width: 330, height: 144)
+                                .clipShape(.rect(cornerRadius: 10))
+                            Text(work.title)
+                                .font(.system(size: 16))
+                                .padding(.top, 10)
+                        }
                     }
                 }
             }
         }
     }
 }
+
 
 #Preview {
     ArtistDeteilView(artist: ArtistModel(name: "wer ertt ", bio: "sdsadfsaf gsfadsfk nsbf ak dak ad af afadaf asfdsadfsaf gsfadsfk nsbf ak dak ad af afadaf asfdsadfsaf gsfadsfk nsbf ak dak ad af afadaf asfdsadfsaf gsfadsfk nsbf ak dak ad af afadaf asf", image: "0", works: [WorksModel(title: "sdfsf sdfsf s", image: "1", info: "asdfsfasf fsfassfa ")]))

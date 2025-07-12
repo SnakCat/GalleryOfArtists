@@ -20,6 +20,7 @@ struct ArtistsView: View {
                         ArtistCustomCell(artist: artist)
                     }
                 }
+                .tint(.black)
             }
             .overlay {
                 if viewModel.isLoading {

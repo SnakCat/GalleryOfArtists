@@ -15,6 +15,6 @@
 - [ ] В низу кнопка "Развернуть". После нажатия на кнопку картина разворачивается на весь экран, снизу кнопку (х) - закрыть.
 
 ## Снимки экрана
-![Главный экран] (https://disk.yandex.ru/client/disk/DewRash/Sprint2?idApp=client&dialog=slider&idDialog=%2Fdisk%2FDewRash%2FSprint2%2FSimulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-12%20at%2013.11.30.png)
-![Страница с художником] (https://disk.yandex.ru/client/disk/DewRash/Sprint2?idApp=client&dialog=slider&idDialog=%2Fdisk%2FDewRash%2FSprint2%2FSimulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-12%20at%2013.11.40.png)
-![Страница с работой] (https://disk.yandex.ru/client/disk/DewRash/Sprint2?idApp=client&dialog=slider&idDialog=%2Fdisk%2FDewRash%2FSprint2%2FSimulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-12%20at%2013.11.44.png)
+![Главный экран](https://disk.yandex.ru/client/disk/DewRash/Sprint2?idApp=client&dialog=slider&idDialog=%2Fdisk%2FDewRash%2FSprint2%2FSimulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-12%20at%2013.11.30.png)
+![Страница с художником](https://disk.yandex.ru/client/disk/DewRash/Sprint2?idApp=client&dialog=slider&idDialog=%2Fdisk%2FDewRash%2FSprint2%2FSimulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-12%20at%2013.11.40.png)
+![Страница с работой](https://disk.yandex.ru/client/disk/DewRash/Sprint2?idApp=client&dialog=slider&idDialog=%2Fdisk%2FDewRash%2FSprint2%2FSimulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-12%20at%2013.11.44.png)
